@@ -1,0 +1,179 @@
+.contenedor-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ".  titulo  cont";
+    background-color: bisque;
+}
+h1{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 80px;
+}
+.cont-busqueda-redes{
+    grid-area: cont;
+
+    display: flex;
+    align-items: center;
+}
+.redes{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#busqueda{
+    padding: 14px;
+    border-radius: 15px 0 0 15px;
+}
+button{
+    padding: 14px;
+}
+form{
+    display: flex;
+}
+
+nav{
+    font-size: 30px;
+    padding: 20px 150px 20px 150px;
+
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: brown;
+}
+.hero{
+    border: 2px solid;
+
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    padding: 80px;
+    background-image: url("portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero h2, .hero p{
+    width: 60%;
+    margin: auto;
+}
+
+/* estilos seccion de recomendaciones*/
+
+.libro-img{
+    width: 350px;
+    border: 2px solid;
+    height: 500px;
+}
+.libro-img img{
+    width: 100%;
+    height: 100%;
+}
+.cont-libros-recomendaciones{
+    display: flex;
+    justify-content: space-around;
+}
+.libros-recomendados{
+    padding: 40px;
+    margin: 0 20px 60px 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+    padding: 20px;
+}
+/*aplica los estilos a la clase card solo si el cursos esta sobre el elemento*/
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px gray;
+}
+.card__boton{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+   padding: 12px 20px;
+   text-transform: uppercase;
+}
+.contenedor-libros{
+    display: flex;
+    overflow: scroll;
+}
+
+.card-libros{
+    margin: 0 50px;
+}.card-precio-boton{
+    display: flex;
+}
+.card__precio{
+    margin-right: 20px;
+}
+.conocenos{
+    display: flex;
+}
+.conocenos-img{
+    width: 50%;
+    padding: 40px;
+}
+.conocenos-texto{
+    width: 50%;
+    padding: 40px;
+}
+.conocenos-img img{
+    width: 100%;
+}
+.centrar{
+    text-align: center;
+    color: brown;
+}
+h2{
+    color: brown;
+}
+
+.hero h2{
+    color: white;
+}
+
+/*estilos del footer*/
+footer{
+    background-color: blanchedalmond;
+
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+
+.copy{
+    grid-column: 1/4;
+    text-align: center;
+}
+footer section h2{
+    border-bottom: 4px solid white;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    margin-bottom: 18px;
+}
+#correo{
+    padding: 16px;
+}
+.boton-enviar{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
