@@ -152,7 +152,10 @@ footer li{
         padding: 20px;
     }
 } 
-
+.card-libros{
+    transition: 1s;
+    padding: 20px;
+}
 /*estilo para escritorio*/
 @media (min-width:900px){
     .contenedor-header{
@@ -172,6 +175,7 @@ footer li{
         padding: 20px;
         transition: 0.5s;
     }
+    
     /*aplica estilos a la clase  card solo si el cursor esta sobre el elemento*/
 
     .card:hover{
